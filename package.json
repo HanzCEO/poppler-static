@@ -1,0 +1,29 @@
+{
+  "name": "poppler-static",
+  "version": "0.0.0",
+  "description": "poppler binary for windows, linux, and macos",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HanzCEO/poppler-static.git"
+  },
+  "keywords": [
+    "native",
+    "binary",
+    "cairo",
+    "pdf"
+  ],
+  "author": "Hanz <hanz@godot.id>",
+  "license": "GPL-2.0",
+  "bugs": {
+    "url": "https://github.com/HanzCEO/poppler-static/issues"
+  },
+  "homepage": "https://github.com/HanzCEO/poppler-static#readme",
+  "dependencies": {
+    "cmake-js": "^7.1.1",
+    "jake": "^10.8.5"
+  }
+}
