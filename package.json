@@ -1,6 +1,6 @@
 {
   "name": "poppler-static",
-  "version": "0.0.0",
+  "version": "22.10.0",
   "description": "poppler binary for windows, linux, and macos",
   "main": "index.js",
   "scripts": {
