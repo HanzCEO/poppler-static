@@ -1,8 +1,9 @@
 name: NPM Package
 
 on:
-	release:
-		types: [created]
+	push
+#	release:
+#		types: [created]
 
 jobs:
 	build-ubuntu:
