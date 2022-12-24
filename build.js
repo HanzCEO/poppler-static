@@ -41,9 +41,8 @@ axios.get(DOWNLOAD_URL, { responseType: 'stream' })
 			cwd: __dirname + '/poppler/build'
 		};
 
-		await spawn('cmake', ['..', '-DCMAKE_BUILD_TYPE=release'], opts);
-		await spawn('make', [], opts);
-//		cp.spawnSync('make', ['install'], opts);
+		await spawn('cmake', ['-DCMAKE_BUILD_TYPE=release', '-G Ninja', '..'], opts);
+		await spawn('ninja', [], opts);
 		console.log("Finished");
 	});
 });
