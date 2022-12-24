@@ -25,7 +25,7 @@ async function spawn(cmd, args, opts) {
 
 axios.get(DOWNLOAD_URL, { responseType: 'stream' })
 .then(({ data }) => {
-	fs.rmSync(__dirname + '/poppler', { recursive: true });
+	fs.rmSync(__dirname + '/poppler', { force: true, recursive: true });
 	fs.mkdirSync(__dirname + '/poppler/build', { recursive: true });
 
 	let extractor = tar.x({
