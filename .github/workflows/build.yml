@@ -1,7 +1,6 @@
 name: NPM Package
 
-on:
-	push
+on: push
 #	release:
 #		types: [created]
 
