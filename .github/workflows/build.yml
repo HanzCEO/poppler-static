@@ -31,6 +31,10 @@ jobs:
            node-version: 17
        - uses: microsoft/setup-msbuild@v1.1
        - uses: ashutoshvarma/setup-ninja@v1.1
+       - uses: msys2/setup-msys2@v2
+         with:
+           install: >-
+             mingw-w64-cairo
        - run: npm ci
        - run: node build.js
        - uses: actions/upload-artifact@v3
