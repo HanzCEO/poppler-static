@@ -30,6 +30,7 @@ jobs:
          with:
            node-version: 17
        - uses: microsoft/setup-msbuild@v1.1
+       - uses: ashutoshvarma/setup-ninja@1.1
        - run: npm ci
        - run: node build.js
        - uses: actions/upload-artifact@v3
